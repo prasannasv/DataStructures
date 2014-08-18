@@ -14,8 +14,6 @@ public class AlienLanguage {
     System.out.println(new AlienLanguage().findPossibleAlphabetOrdering(sample));
   }
 
-  private Map<Character, List<Character>> followsMap = new HashMap<Character, List<Character>>();
-
   private List<Character> findPossibleAlphabetOrdering(String[] words) {
     Graph<Character> followsGraph = new Graph<Character>();
     buildFollowsGraph(followsGraph, words);
